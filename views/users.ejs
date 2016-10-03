@@ -1,0 +1,14 @@
+<% include partials/header.ejs %>
+
+    <h1><%= title %></h1>
+	<ul>
+		<% for(var i=0; i<userlist.length; i++) { %>
+			<li>
+				<a href = "/<%=userlist[i]%>">
+					<%=userlist[i]%>
+				</a>
+			</li>
+		<%}%>
+	</ul>
+  </body>
+</html>
